@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "SF Haven",
+    "slug": "sfhaven",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1976D2"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "org.sfhaven.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "SF Haven needs your location to show nearby services and safe parking areas.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "SF Haven needs your location to alert you about parking restrictions and nearby services."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1976D2"
+      },
+      "package": "org.sfhaven.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
